@@ -1,29 +1,25 @@
-<html lang="it">
-   <head>
-       <meta charset="utf-8">
-       <title>Coding&Color - 4AI</title>
-       <link href="styles.css" rel="stylesheet" type="text/css" />
-   </head>
-   <body>
-       <div id="header">
-           <h1 id="saluto">Oggi è un bel giorno!</h1>
-       </div>
-       <div id="title">
-           <h1>CODICI e COLORI</h1>
-       </div>
-       <div id="input">
-           <label for="inNumber">Inserisci un numero: </label>
-           <input id="inNumber" placeholder="inserisci un numero">
-           <br>
-           <button type="button" id="btnElabora" onclick="elabora()">Elabora</button>
-           <button type="button" id="btnCancella" onclick="reset()">Cancella</button>
-       </div>
-       <div id="output">
-           <p id="outText">Output</p>
-       </div>
-       <div>
-           <p id="error">Errori</p>
-       </div>
-       <script src="script.js"></script>
-   </body>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Coding&Color</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header">
+   <h1 id="saluto"></h1>
+</div>
+<div id="title">
+</div>
+<div id="input">
+<label for="inNumber">Inserisci un numero: </label>
+<input id="inNumber" type="number" placeholder="numero" min="0" max="255">
+<button onclick="verifica()">Elabora</button>
+<button onclick="reset()">Reset</button>
+</div>
+<div id="output">
+   <p id="output"></p>
+</div>
+<script src="script.js"></script>
+</body>
 </html>
