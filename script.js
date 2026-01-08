@@ -25,7 +25,6 @@ let numeriInseriti = [];
 
 updateHeaderDatetime();
 setInterval(updateHeaderDatetime, 1000);
-// verifica il numero inserito dall'utente nella casella di testo  
 function verifica() {
   const input = document.getElementById("inNumber");
   const output = document.getElementById("output");
@@ -39,14 +38,12 @@ function verifica() {
   }
 
   if (numero >= 0 && numero <= 255) {
-    // add number to array (max 3)
     if (numeriInseriti.length < 3) {
       numeriInseriti.push(numero);
     }
     
     output.innerText = "Hai inserito il numero : " + numero + "\n\nNumeri inseriti: " + numeriInseriti.join(", ");
     
-    // if 3 numbers collected, apply RGB color to title
     if (numeriInseriti.length === 3) {
       const [r, g, b] = numeriInseriti;
       const titleEl = document.querySelector('#header h1');
@@ -72,3 +69,4 @@ function reset() {
   }
 }
         
+
